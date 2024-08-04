@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder');
+
+.header-container{
+    width: 100lvw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    padding: 20px;
+    z-index: 5;
+}
+
+@media screen and (max-width:853px) {
+    .header-container{
+        display:none;
+    }
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 50%;
+}
+
+.nav-item{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 100%;
+    color: black;
+    font-weight: 250;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+    color: #5382FF;
+ font-weight: 1000;
+ width: fit-content;
+    transition: 0.3s;
+}

@@ -1,0 +1,179 @@
+.vm-container{
+    min-height: 95lvh;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vm-box{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.417);
+    border-radius: 20px;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blue-box{
+    background-color: #5382FF;
+    width: 40vw;
+    position: absolute;
+    height: inherit;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    z-index: 0;
+}
+
+.in-vision{
+    z-index: 1;
+    width: 50%;
+    height: inherit;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.in-mission{
+    z-index: 1;
+    width: 50%;
+    height: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.vm-illust{
+    width: 30%;
+}
+
+#vision-illustration{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.1;
+}
+
+#mission-illustration{
+    position: absolute;
+    z-index: 0;
+    opacity: 1;
+}
+
+#mission-statement{
+    opacity: 0;
+    font-size: 150% !important;
+}
+
+.vm-statement{
+    height: 60%;
+    color: white;
+    font-size: 180%;
+    font-family: Inder;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    z-index: 5;
+}
+
+.vision-button{
+    border-radius: 25px;
+    width: 25%;
+    padding: 10px;
+    font-family: Inder;
+    font-size: 120%;
+    background-color: white;
+    text-align: center;
+    border: solid 2px white;
+    color: #032171;
+}
+
+.mission-button{
+    border-radius: 25px;
+    width: 25%;
+    padding: 10px;
+    font-family: Inder;
+    font-size: 120%;
+    background-color: white;
+    text-align: center;
+    border: solid 2px #5382FF;
+    color: #032171;
+}
+
+.mission-button:hover , .vision-button:hover{
+    background-color: #5382FF;
+    cursor: pointer;
+    color: white;
+}
+
+.fade-class{
+    color: red;
+    animation: fade 2s;
+    transition: 2s;
+}
+
+#vm-small{
+    background-color: #5382FF;
+    display: none;
+}
+
+#vm-small .vm-statement{
+    font-size: 80%;
+}
+
+#vm-small .in-vision , #vm-small .in-mission{
+    height: auto;
+}
+
+@media screen and (max-width: 900px) {
+    #vm-big{
+        display: none;
+    }
+    #vm-small{
+        display: flex;
+    }
+}
+
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out-light {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0.1;
+    }   
+}
+
+@media screen and (max-width:900px) {
+    .in-vision , .in-mission{
+        width: 100%;
+        height: 50%;
+    }
+    .blue-box{
+        width: 80vw;
+        height: 40vh;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        margin-top: -40vh;
+    }
+}

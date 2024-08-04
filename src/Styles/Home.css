@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari');
+@import url('https://fonts.googleapis.com/css2?family=Noto');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans');
+
+.home-container{
+    min-height: 90vh;
+    display: flex;
+    margin-top: 10vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inn-logo{
+    position: absolute;
+    top: 0;
+    width: 5vw;
+    padding: 10px;
+}
+
+.dept-logo{
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 10vw;
+    padding: 10px;
+}
+
+.home-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.heading{
+    font-family: Josefin Sans;
+    font-size: 500%;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
+
+.caption{
+    font-family: Josefin Sans;
+    font-size: 200%;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    padding: 10px;
+}
+
+.description{
+    font-size: 150%;
+    font-family: Noto;
+    text-align: center;
+    padding: 10px;
+}
+
+.innovate-hub{
+    width: 300px;
+    background-color: #5382FF;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: Inder;
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    .inn-logo{
+        width: 10vw;
+    }
+    .dept-logo{
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .inn-logo{
+        width: 20vw;
+    }
+    .dept-logo{
+        width: 30vw;
+    }
+}

@@ -1,0 +1,98 @@
+.team-container{
+    min-height: 95lvh;
+    padding-top: 5%;
+}
+
+.team-head{
+    font-family: Inder;
+    font-size: 300%;
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(to right bottom , black , rgba(0, 0, 0, 0.558));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.founders-block, .advisors-block, .quango-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 5%;
+    row-gap: 25px;
+    margin: 3%;
+    margin-bottom: 6%;
+    flex-wrap: wrap;
+}
+
+.role{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.founder-pic{
+    width: 30vh;
+    height: 30vh;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 0px 5px rgb(61, 60, 60);
+}
+
+.advisor-pic{
+    width: 25vh;
+    height: 25vh;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 0px 3px rgb(61, 60, 60);
+}
+
+.quango-pic{
+    width: 20vh;
+    height: 20vh;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 0px 1px rgb(61, 60, 60);
+}
+
+.founder-desc , .advisor-desc, .quango-desc{
+    text-align: center;
+    font-family: Inder;
+}
+
+.founder-name{
+    font-weight: bold;
+    font-size: 150%;
+    text-transform: uppercase;
+}
+
+.founder-role{
+    font-size: 100%;
+    font-style: italic;
+}
+
+.advisor-name{
+    font-weight: bold;
+    font-size: 130%;
+    text-transform: uppercase;
+}
+
+.advisor-role{
+    font-size: 90%;
+    font-style: italic;
+}
+
+.quango-name{
+    font-weight: bold;
+    font-size: 110%;
+    text-transform: uppercase;
+}
+
+.quango-role{
+    font-size: 80%;
+    font-style: italic;
+}
